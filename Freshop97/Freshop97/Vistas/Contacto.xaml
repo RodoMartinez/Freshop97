@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:lottie="clr-namespace:Lottie.Forms;assembly=Lottie.Forms"
+             x:Class="Freshop97.Vistas.Contacto">
+    <ContentPage.Content>
+        <ScrollView>
+        <StackLayout>
+            <Label Text="Correo:"/>
+            <Entry x:Name="correo"/>
+            <Label Text="Asunto:"/>
+            <Entry x:Name="asunto"/>
+            <Label Text="Mensaje:"/>
+            <Entry x:Name="mensaje" Placeholder="Escribe tu mensaje aqui"/>
+            <Button Text="Enviar" x:Name="btn" Clicked="Btn_Clicked"/>
+            <Label x:Name="Response" Text="" HorizontalOptions="Center"/>
+            <lottie:AnimationView x:Name="lottie"
+                HeightRequest="200"
+                WidthRequest="200"
+                HorizontalOptions="Center"/>
+        </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

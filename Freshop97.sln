@@ -1,0 +1,33 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.421
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Freshop97.Android", "Freshop97\Freshop97.Android\Freshop97.Android.csproj", "{76BE3793-81BD-486A-A645-738666F2441B}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Freshop97", "Freshop97\Freshop97\Freshop97.csproj", "{70C6A969-3699-4CB8-B081-2198A6A20045}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{76BE3793-81BD-486A-A645-738666F2441B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{76BE3793-81BD-486A-A645-738666F2441B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{76BE3793-81BD-486A-A645-738666F2441B}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{76BE3793-81BD-486A-A645-738666F2441B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{76BE3793-81BD-486A-A645-738666F2441B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{76BE3793-81BD-486A-A645-738666F2441B}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{70C6A969-3699-4CB8-B081-2198A6A20045}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{70C6A969-3699-4CB8-B081-2198A6A20045}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{70C6A969-3699-4CB8-B081-2198A6A20045}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{70C6A969-3699-4CB8-B081-2198A6A20045}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2AF8642E-9059-43F3-B988-A38BA6371223}
+	EndGlobalSection
+EndGlobal

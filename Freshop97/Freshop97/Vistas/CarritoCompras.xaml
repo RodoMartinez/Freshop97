@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:ffimageloading="clr-namespace:FFImageLoading.Forms;assembly=FFImageLoading.Forms"
+             xmlns:fftransformations="clr-namespace:FFImageLoading.Transformations;assembly=FFImageLoading.Transformations"
+             x:Class="Freshop97.Vistas.CarritoCompras">
+    <ContentPage.Content>
+        <StackLayout>
+            <StackLayout>
+                <Label x:Name="lbl"/>
+            </StackLayout>
+            <ListView x:Name="Lista" RowHeight="100" SeparatorVisibility="None" BackgroundColor="AliceBlue" ItemSelected="Lista_ItemSelected">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <!-- Main design for our menu items -->
+                            <StackLayout VerticalOptions="FillAndExpand" Orientation="Horizontal">
+                                <StackLayout>
+                                    <ffimageloading:CachedImage Source="Freshop" VerticalOptions="Center" HeightRequest="100" WidthRequest="100">
+                                        <ffimageloading:CachedImage.Transformations>
+                                            <fftransformations:CircleTransformation/>
+                                        </ffimageloading:CachedImage.Transformations>
+                                    </ffimageloading:CachedImage>
+                                </StackLayout>
+                                <StackLayout VerticalOptions="FillAndExpand" Orientation="Vertical">
+                                    <Label Text="{Binding Producto}" FontSize="Small" VerticalOptions="Center" TextColor="Black" />
+                                    <Label Text="{Binding Precio}" FontSize="Small" VerticalOptions="Center" TextColor="Black" />
+                                    <Label Text="{Binding Cantidad}" FontSize="Small" VerticalOptions="Center" TextColor="Black" IsVisible="False" />
+                                </StackLayout>
+                            </StackLayout>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

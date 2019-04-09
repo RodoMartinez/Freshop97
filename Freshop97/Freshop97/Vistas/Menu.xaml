@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:ffimageloading="clr-namespace:FFImageLoading.Forms;assembly=FFImageLoading.Forms"
+             x:Class="Freshop97.Vistas.Menu">
+    <ContentPage.Content>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="50"/>
+                <RowDefinition Height="1"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <!--Menu de arriba Parte 1-->
+            <Grid Grid.Row="0" BackgroundColor="Black">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <StackLayout Grid.Column="0" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
+                    <ffimageloading:CachedImage Source="tienda.png"/>
+                    <StackLayout.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                    </StackLayout.GestureRecognizers>
+                </StackLayout>
+                
+                <StackLayout Grid.Column="1" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
+                    <ffimageloading:CachedImage Source="carro.png"/>
+                    <StackLayout.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped_1"/>
+                    </StackLayout.GestureRecognizers>
+                </StackLayout>
+                
+                <StackLayout Grid.Column="2" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
+                    <ffimageloading:CachedImage Source="contacto.png"/>
+                    <StackLayout.GestureRecognizers>
+                       <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped_2"/>
+                    </StackLayout.GestureRecognizers>
+                </StackLayout>
+                
+                <StackLayout Grid.Column="3" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
+                    <ffimageloading:CachedImage Source="profile.png"/>
+                    <StackLayout.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped_3"/>
+                    </StackLayout.GestureRecognizers>
+                </StackLayout>
+                
+                <StackLayout Grid.Column="4" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
+                    <ffimageloading:CachedImage Source="cerrar.png"/>
+                    <StackLayout.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped_4"/>
+                    </StackLayout.GestureRecognizers>
+                </StackLayout>
+            </Grid>
+            <!--Parte 2-->
+            <BoxView BackgroundColor="Black" Grid.Row="1"/>
+            <!--Parte 3-->
+            <ContentView Grid.Row="2" x:Name="Contenido"/>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:ffimageloading="clr-namespace:FFImageLoading.Forms;assembly=FFImageLoading.Forms"
+             xmlns:fftransformations="clr-namespace:FFImageLoading.Transformations;assembly=FFImageLoading.Transformations"
+             x:Class="Freshop97.Vistas.Login">
+    <StackLayout BackgroundColor="#f7c2a9">
+        <StackLayout BackgroundColor="#f7c2a9">
+            <ActivityIndicator IsRunning="False" Color="Red"/>
+        </StackLayout>
+    <Grid BackgroundColor="#f7c2a9">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+        </Grid.RowDefinitions>
+            <ffimageloading:CachedImage Source="Logo.jpg">
+                <ffimageloading:CachedImage.Transformations>
+                    <fftransformations:RoundedTransformation/>
+                </ffimageloading:CachedImage.Transformations>
+            </ffimageloading:CachedImage>
+            <Label Text="Usuario:" Grid.Row="1"/>
+        <Entry Placeholder="Ingrese usuario" Grid.Row="2" x:Name="user"/>
+        <Label Text="Contraseña:" Grid.Row="3"/>
+        <Entry Placeholder="Ingrese contraseña" IsPassword="True" Grid.Row="4" x:Name="pass"/>
+        <Button Text="Iniciar sesion" Grid.Row="5" BackgroundColor="#e7b358" Clicked="Button_Clicked" x:Name="btnI"/>
+        <ActivityIndicator Grid.Row="5" HorizontalOptions="Center" IsEnabled="False" IsRunning="False" IsVisible="False" x:Name="indicator" Color="Red"/>
+    </Grid>
+    </StackLayout>
+</ContentPage>
